@@ -6,7 +6,7 @@ import org.openqa.selenium.support.FindBy;
 
 public class HomePage extends BasePage {
     
-    private static String URL = "https://www.google.com/";
+    private static String URL = "https://magento.softwaretestingboard.com/";
 
     public HomePage(WebDriver driver) {
         super(driver);
@@ -15,7 +15,7 @@ public class HomePage extends BasePage {
     
     // -------------------------------------------------------- Elements --------------------------------------------------------
     
-	@FindBy(id = "hplogo")
+	@FindBy(className = "logo")
     private WebElement logo;
     
     // -------------------------------------------------------- Methods ---------------------------------------------------------
