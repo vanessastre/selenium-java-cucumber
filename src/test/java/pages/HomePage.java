@@ -18,6 +18,11 @@ public class HomePage extends BasePage {
 	@FindBy(className = "logo")
     WebElement logo;
     
+    @FindBy(xpath = "(//a[contains(text(),'Sign In')])[1]")
+    WebElement signInBtn;
+
+    @FindBy(xpath = "(//a[contains(text(),'Create an Account')])[1]")
+    WebElement createAnAccountBtn;
 
     @FindBy(xpath = "//span[contains(text(),'What')]")
     WebElement whatsNewCategory;
