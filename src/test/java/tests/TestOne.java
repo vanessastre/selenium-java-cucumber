@@ -4,6 +4,7 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import pages.HomePage;
+import pages.LoginPage;
 
 public class TestOne extends TestBase {
 
@@ -15,5 +16,9 @@ public class TestOne extends TestBase {
 	public void testTC01() {
 		HomePage homePage = new HomePage(driver);
 		homePage.checkHomePage();
+		homePage.clickSignIn();
+
+		LoginPage loginPage = new LoginPage(driver);
+		loginPage.inputName("roni_cost@example.com");
 	}
 }
