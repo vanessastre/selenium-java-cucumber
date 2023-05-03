@@ -49,6 +49,10 @@ public class HomePage extends BasePage {
         isElementDisplayed(logo);
     }
 
+    public void clickSignIn() {
+        clickElement(signInBtn);
+    }
+
     public void clickWhatsNew() {
         clickElement(whatsNewCategory);
     }
