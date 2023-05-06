@@ -14,11 +14,18 @@ public class LoginPage extends BasePage {
     
 	@FindBy(id = "email")
     WebElement emailField;
+
+    @FindBy(id = "pass")
+    WebElement passwordField;
     
     // -------------------------------------------------------- Methods ---------------------------------------------------------
 
     public void inputName(String email) {
         typeElement(emailField, email);
+    }
+
+    public void inputPassword(String password) {
+        typeElement(passwordField, password);
     }
 
 }
