@@ -20,5 +20,7 @@ public class TestOne extends TestBase {
 
 		LoginPage loginPage = new LoginPage(driver);
 		loginPage.inputName("roni_cost@example.com");
+		loginPage.inputPassword("roni_cost3@example.com");
+
 	}
 }
