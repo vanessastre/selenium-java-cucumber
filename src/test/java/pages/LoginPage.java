@@ -17,6 +17,9 @@ public class LoginPage extends BasePage {
 
     @FindBy(id = "pass")
     WebElement passwordField;
+
+    @FindBy(id = "send2")
+    WebElement signInBtn;
     
     // -------------------------------------------------------- Methods ---------------------------------------------------------
 
@@ -26,6 +29,10 @@ public class LoginPage extends BasePage {
 
     public void inputPassword(String password) {
         typeElement(passwordField, password);
+    }
+
+    public void clickSignIn() {
+        clickElement(signInBtn);
     }
 
 }
