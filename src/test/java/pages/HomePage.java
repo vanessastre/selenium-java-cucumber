@@ -53,6 +53,10 @@ public class HomePage extends BasePage {
         clickElement(signInBtn);
     }
 
+    public void clickCreateAccount() {
+        clickElement(createAnAccountBtn);
+    }
+
     public void clickWhatsNew() {
         clickElement(whatsNewCategory);
     }
