@@ -22,6 +22,9 @@ public class TestOne extends TestBase {
 		signUpPage.inputFirstName("Rodolfo");
 		signUpPage.inputLastName("Perez");
 		signUpPage.inputEmailAddress("rodo@gmail.com");
+		signUpPage.inputPassword("123456");
+		signUpPage.inputPasswordConfirmation("123456");
+		signUpPage.clickCreateAccount();
 
 	}
 }
