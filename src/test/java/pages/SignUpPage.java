@@ -30,6 +30,9 @@ public class SignUpPage extends BasePage {
     @FindBy(xpath = "//span[contains(text(),'Create an Account')]")
     WebElement createAccountBtn;
 
+    @FindBy(xpath = "//div[contains(text(),'Thank you for registering')]")
+    WebElement thanksMsg;
+
     // -------------------------------------------------------- Methods ---------------------------------------------------------
 
     public void inputFirstName(String name) {
@@ -54,6 +57,10 @@ public class SignUpPage extends BasePage {
 
     public void clickCreateAccount() {
         clickElement(createAccountBtn);
+    }
+
+    public void checkThanksMsg() {
+        isElementDisplayed(thanksMsg);
     }
 
 }

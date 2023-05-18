@@ -43,6 +43,6 @@ public class SignUpSteps {
 
     @Then("User should be redirected to the dashboard page")
     public void userShouldBeRedirectedToTheDashboardPage() {
-
+        signUpPage.checkThanksMsg();
     }
 }

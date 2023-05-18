@@ -1,8 +1,6 @@
 package steps;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.devtools.v109.input.Input;
-
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import pages.HomePage;
@@ -37,6 +35,7 @@ public class SignInStep {
 
     @Then("User should be logged in successfully")
     public void userShouldBeLoggedInSuccessfully() {
-        // code to verify successful login
+        homePage.checkWelcomeMsg();
     }
+    
 }

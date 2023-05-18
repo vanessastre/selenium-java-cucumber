@@ -24,6 +24,9 @@ public class HomePage extends BasePage {
     @FindBy(xpath = "(//a[contains(text(),'Create an Account')])[1]")
     WebElement createAnAccountBtn;
 
+    @FindBy(xpath = "(//span[contains(text(),'Welcome')])[1]")
+    WebElement welcomeMsg;
+
     @FindBy(xpath = "//span[contains(text(),'What')]")
     WebElement whatsNewCategory;
 
@@ -44,7 +47,6 @@ public class HomePage extends BasePage {
     
     // -------------------------------------------------------- Methods ---------------------------------------------------------
 
-    // Check if the page is loaded by verifying if the logo is displayed
     public void checkHomePage() {
         isElementDisplayed(logo);
     }
@@ -57,6 +59,10 @@ public class HomePage extends BasePage {
         clickElement(createAnAccountBtn);
     }
 
+    public void checkWelcomeMsg() {
+        isElementDisplayed(welcomeMsg);
+    }
+    
     public void clickWhatsNew() {
         clickElement(whatsNewCategory);
     }

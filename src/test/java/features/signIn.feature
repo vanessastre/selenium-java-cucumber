@@ -10,5 +10,7 @@ Feature: Sign In
     Then User should be logged in successfully
 
     Examples:
-      | email          | password   |
-      | rodo@gmail.com | Ab@123456  |
+      | email          | password  |
+      | rodo@gmail.com | Ab@123456 |
+      # | mora@gmail.com | 123456Ab@ |
+      # | bota@gmail.com | 654321@bA |

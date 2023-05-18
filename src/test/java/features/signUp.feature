@@ -9,5 +9,5 @@ Feature: User can create a new account
     Then User should be redirected to the dashboard page
 
     Examples:
-      | first_name | last_name | email_address  | password  | password_confirmation |
-      | Rodolfo    | Perez     | rodo@gmail.com | Ab@123456 | Ab@123456             |
+      | first_name | last_name | email_address   | password  | password_confirmation |
+      | Bota       | Bota      | bota1@gmail.com | Ab@123456 | Ab@123456             |
