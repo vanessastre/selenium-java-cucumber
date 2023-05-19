@@ -8,7 +8,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import pages.HomePage;
 import pages.SignUpPage;
-import runner.RunCucumberTest;
+import utils.RunCucumberTest;
 
 public class SignUpSteps {
 

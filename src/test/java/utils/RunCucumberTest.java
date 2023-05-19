@@ -1,4 +1,4 @@
-package runner;
+package utils;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -44,7 +44,7 @@ public class RunCucumberTest extends AbstractTestNGCucumberTests{
 	private ChromeDriver getChromeDriver() {
 		String path = System.getProperty("user.dir");
 		System.out.println(path); 
-        String chromeDriverPath = path + "/src/test/resources/drivers/chromedriver.exe";
+        String chromeDriverPath = path + "/src/test/java/utils/drivers/chromedriver.exe";
 		System.setProperty("webdriver.chrome.driver", chromeDriverPath);
 		return new ChromeDriver();
 	}
