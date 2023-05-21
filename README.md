@@ -28,12 +28,12 @@ This project provides a simple and basic implementation of a Selenium Java test 
 ## Project structure
 
 ### 📁/features
-- ```signin.feature```: Contains scenarios related to the sign-in functionality.
-- ```signup.feature```: Contains scenarios related to the sign-up functionality.
+- ```signIn.feature```: Contains scenarios related to the sign-in functionality.
+- ```signUp.feature```: Contains scenarios related to the sign-up functionality.
 
 ### 📁/steps
-- ```signinsteps.java```: Defines step definitions for the sign-in feature scenarios.
-- ```signupsteps.java```: Defines step definitions for the sign-up feature scenarios.
+- ```SignInSteps.java```: Defines step definitions for the sign-in feature scenarios.
+- ```SignUpSteps.java```: Defines step definitions for the sign-up feature scenarios.
 
 ### 📁/pages
 - ```BasePage.java```: Represents the base page object with common functionalities for all page objects.
