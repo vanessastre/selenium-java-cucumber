@@ -49,7 +49,7 @@ This project provides a simple and basic implementation of a Selenium Java test 
 ## How to Run
 To run the tests, execute the following command:
 ```
-mvn test -Dcucumber.options="@tagname"
+mvn clean test -Dcucumber.filter.tags="@yourTagName"
 ```
 Replace ```@tagname``` with the desired tag or tags to specify which scenarios to run. For example, ```@signIn``` or ```@signUp```.
 <br>
