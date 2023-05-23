@@ -3,6 +3,7 @@ package steps;
 
 import org.openqa.selenium.WebDriver;
 
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -27,7 +28,7 @@ public class SignUpSteps {
         homePage.clickCreateAccount();
     }
 
-    @When("User inputs {string}, {string}, {string}, {string}, and {string}")
+    @And("User inputs {string}, {string}, {string}, {string}, and {string}")
     public void userInputsInformation(String firstName, String lastName, String email, String password, String confirmPassword) {
         signUpPage.inputFirstName(firstName);
         signUpPage.inputLastName(lastName);
@@ -36,9 +37,9 @@ public class SignUpSteps {
         signUpPage.inputPasswordConfirmation(confirmPassword);
     }
 
-    @When("User clicks on the Create Account button again")
+    @And("User clicks on the Create Account button again")
     public void userClicksOnTheCreateAccountButtonAgain() {
-        signUpPage.clickCreateAccount();
+        signUpPage.clickCreateAccountBtn();
     }
 
     @Then("User should be redirected to the dashboard page")
