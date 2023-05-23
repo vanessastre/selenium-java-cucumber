@@ -21,7 +21,7 @@ public class HomePage extends BasePage {
     @FindBy(xpath = "(//a[contains(text(),'Sign In')])[1]")
     WebElement signInBtn;
 
-    @FindBy(xpath = "(//a[contains(text(),'Create an Account')])[1]")
+    @FindBy(xpath = "(//ul[@class='header links']//a[contains(text(),'Create an Account')])[1]")
     WebElement createAnAccountBtn;
 
     @FindBy(xpath = "(//span[contains(text(),'Welcome')])[1]")

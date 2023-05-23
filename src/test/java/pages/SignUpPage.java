@@ -27,8 +27,8 @@ public class SignUpPage extends BasePage {
     @FindBy(id = "password-confirmation")
     WebElement passwordConfirmationField;
 
-    @FindBy(xpath = "//span[contains(text(),'Create an Account')]")
-    WebElement createAccountBtn;
+    @FindBy(xpath = "//button[contains(@title,'Create an Account')]")
+    WebElement createAccountBtn2;
 
     @FindBy(xpath = "//div[contains(text(),'Thank you for registering')]")
     WebElement thanksMsg;
@@ -55,8 +55,8 @@ public class SignUpPage extends BasePage {
         typeElement(passwordConfirmationField, password);
     }
 
-    public void clickCreateAccount() {
-        clickElement(createAccountBtn);
+    public void clickCreateAccountBtn() {
+        clickElement(createAccountBtn2);
     }
 
     public void checkThanksMsg() {
